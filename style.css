@@ -1,0 +1,691 @@
+body {
+    background-color: #F5F5DC;
+}
+
+/*navigationsbaren på forside*/
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #CC5500;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #F5F5DC;
+    padding-left: 0.5%;
+    text-decoration: none;
+    font-size: 200px;
+    margin: 120px;
+    height: auto; 
+    font-family: fisterra-fora, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.navigation {
+    font-family: "inter", sans-serif; 
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center; /*sikrer at de står i midten*/
+    font-size: 40px;
+    margin-left: auto; /* sikrer at det kommer i højre side*/
+ 
+}
+
+.navigation a {
+    text-decoration: none;
+    margin-right: 300px;
+    white-space: nowrap; /*sikrer at der ikke kommer linjeskift*/
+}
+
+.navigation1 {
+    font-family: "inter", sans-serif; 
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center; /*sikrer at de står i midten*/
+    font-size: 40px;
+    margin-left: auto; /* sikrer at det kommer i højre side*/
+ 
+}
+
+.navigation1 a {
+    color: #CC5500;
+    text-decoration: none;
+    margin-right: 20%;
+    white-space: nowrap; /*sikrer at der ikke kommer linjeskift*/
+}
+
+.dropdown-toggle-undermenu {
+    color: #CC5500;
+}
+
+.dropdown-toggle-hovedmenu {
+    color: #F5F5DC;
+}
+
+
+.dropdown-toggle {
+    text-decoration: none;
+    white-space: nowrap; /*sikrer at der ikke kommer linjeskift*/
+    padding: 15px 10px 100px 10px;
+}
+
+
+/* dropdown*/
+
+.dropdown-hovedmenu {
+    background-color: #CC5500;  
+}
+
+.dropdown-undermenu {
+    background-color: #F5F5DC;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    background-color: #F5F5DC;
+    display: none;
+    position: absolute;
+    list-style-type: none; 
+    min-width: 160px;
+    padding: 15px 10px;
+    z-index: 1;
+    left: -12%; /* gør at dropdown menuen ryger under pilen også */
+}
+
+.dropdown-content a {
+    font-family: "inter", sans-serif; 
+    font-size: 40px;
+    color: #CC5500;
+    padding: 30px 18px;
+    margin-right: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Vis dropdown-menuen */
+}
+
+.dropdown-content a:hover {
+    font-weight: 700; /* Gør teksten tykkere ved hover */
+}
+
+.arrow {
+    position: absolute;
+    right: 105%; /* Juster placeringen af pilen */
+    top: 50%; /* Centrer pilen vertikalt */
+    transform: translateY(-50%); /* Juster til midten */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #F5F5DC; /* Pilen farve */
+    opacity: 1; /* Hold pilen synlig som standard */
+    transition: display 0.3s ease, transform 0.3s ease; /* Gør pilen glidende */
+}
+
+/* Skjul pilen, når dropdown-menuen ikke er synlig */
+.dropdown:not(:hover) .dropdown-content {
+    display: none; /* Skjul dropdown-menuen*/
+}
+
+/* Vis pilen når dropdown-menuen er synlig */
+.dropdown:hover .arrow,
+.dropdown .dropdown-content:hover + .arrow {
+    opacity: 1; /* Hold pilen synlig, når dropdown-menuen vises */
+}
+
+/* Rotér pilen, når musen er over dropdown */
+.dropdown:hover .arrow {
+    transform: translateY(-50%) rotate(180deg); /* Rotér 180 grader */
+}
+
+
+.tilbagetilforside {
+    color: #CC5500;
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-size: 100px;
+    align-items: center;
+}
+
+.tilbagetilforside i {
+    padding: 1%;
+}
+
+/*navigationsbaren på undermenuerne*/
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5DC;
+    top: 0;
+    width: 100%;
+    border-bottom: 3.5px solid #CC5500;
+}
+
+.logo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: #CC5500;
+    padding-left: 0.5%;
+    text-decoration: none;
+    font-size: 200px;
+    margin: 120px;
+    height: auto; 
+    font-family: fisterra-fora, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/*main på forside*/
+.forside1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.forside1 img {
+    width: 100%; /* Sørger for, at hvert billede fylder sin container */
+    height: auto; /* Bevarer billedets proportioner */
+    object-fit: cover; /* Sikrer, at billederne tilpasses containeren uden at forvrænge */
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 300; /*får skriften til at blive tyndere*/
+  color: #654321;
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 0%;
+}
+
+#forsideskrift{
+    font-family: fisterra-fora, sans-serif;
+    color: #CC5500;
+    text-align: center;
+    font-size: 600px;
+    margin-top: 0%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.forside2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.forside2 img {
+    width: 100%; /* Sørger for, at hvert billede fylder sin container */
+    height: auto; /* Bevarer billedets proportioner */
+    object-fit: cover; /* Sikrer, at billederne tilpasses containeren uden at forvrænge */
+}
+
+.intro {
+    font-family: "Lora", serif;
+    color: #CC5500;
+    text-align: center;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 2.8;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.custom-font {
+    font-family: fisterra-fora, sans-serif;
+}
+
+.imgfooter {
+    width: 100%;  /* Fylder hele bredden af vinduet */
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+/*main på undermenuerne*/
+
+.undermenu {
+    font-family: lora;
+    color: #654321;
+    text-align: center;
+    font-weight: 1;
+    margin-top: 5%;
+    font-size: 80px;
+}
+
+@font-face {
+    font-family: 'TropicalCalm';
+    src: url('/webunivers/fonts/trovical-calm-font/TrovicalCalmFreeRegular-0vam4.otf') format('truetype');
+}
+
+.overskrift{
+    font-family: 'TropicalCalm', sans-serif;
+    color: #CC5500;
+    text-align: center;
+    margin: 0.5%;
+    font-size: 550px;
+    font-weight: 300;
+}
+
+.underrubrik {
+    font-family: lora;
+    color: #CC5500;
+    line-height: 2;
+    margin: 30px 1000px;
+    font-weight: 10;
+}
+
+/*tjekliste*/
+.tjekliste {
+    margin-bottom: 200px;
+}
+
+
+.billedrække {
+    display: flex;
+    justify-content: space-around; /* Justerer billederne med mindre mellemrum */
+    align-items: stretch; /* Gør at billederne strækker sig for at udfylde containerens højde */
+    height: 60%; /* Gør højden automatisk for at tilpasse sig indholdet */
+    margin-top: 300px;
+}
+
+.billedrække img {
+    width: 40%; /* Gør billederne 100% af deres forælder */
+    opacity: 30%;
+    max-width: none; /* Forhindrer at billederne begrænses af max-width */
+    height: auto;
+    object-fit: cover;
+    padding: 0; /* Fjerner padding for at udnytte pladsen bedst muligt */
+}
+
+.række {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.tjekliste-tekst {
+    font-family: "Lora", serif;
+    color: #CC5500;
+    font-size: 60px;
+    font-weight: 200;
+    padding: 0 3%;
+    width: 60%;
+    line-height: 3;
+}
+
+.cta1 {
+    display: flex;
+    height: 30%;
+    font-size: 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 8%; 
+    border: 2px solid #654321;
+    background-color: transparent;
+    font-family: "Lora", serif;
+    color: #654321;
+    padding: 20px 90px;
+}
+
+.cta1 a {
+    text-decoration: none;
+    color: #654321;
+}
+
+.pil {
+    color:#654321;
+    font-size: 0.8em;
+    margin-left: 50px;
+    margin-right: 5px;
+}
+.cta1 a:hover {
+    color: #CC5500;
+}
+.cta1 a:hover .pil {
+    color: #CC5500;
+}
+
+/*billedgalleri*/
+
+.billedballeri {
+    margin-bottom: 300px;
+}
+
+.bg {
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+    /*med border*/
+.bg-border {
+    display: flex;
+    border: 0.5px solid #CC5500;
+    padding: 3%;
+}
+
+.bg-billede-border {
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    margin-left: 3%;
+}
+
+.tekst-border {
+    margin-top: 500px;
+    margin-right: 1%;
+    margin-left: 15%;
+    text-align: end;
+    color: #CC5500;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+bordercta {
+    align-items: center;
+    padding: 20px 90px;
+    font-size: 40px;
+    height: 30%;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 8%; 
+    border: 2px solid #654321;
+    background-color: transparent;
+    font-family: "Lora", serif;
+    color: #654321;
+}
+
+.bordercta {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centrere horisontalt */
+    margin-top: 7%;
+}
+
+    /*uden border*/
+
+.bg-uborder {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bg-billede-uborder {
+    justify-content: end;
+    margin-left: auto;
+    margin-right: 2%;
+    height: 100%;
+    width: 45%;
+}
+
+.tekst-uborder {
+    color: #CC5500;
+    font-family: Lora, serif;
+    font-weight: 400;
+    font-size: 80px;
+    padding-top: 7%;
+    padding-left: -2%;
+    margin-left: 10%;
+    padding-right: 10%;
+    margin-right: 10%;
+}
+
+.ubordercta {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Centrere horisontalt */
+    margin-top: 7%;
+}
+
+/*aarhus guide*/
+
+.aarhus {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Skift fra 100vw til 100% */
+    justify-content: space-around; /* Fordel elementerne jævnt */
+    padding-left: 5%; /* Giv lidt padding fra venstre */
+    padding-right: 5%; /* Giv lidt padding fra højre */
+    box-sizing: border-box; /* Sørg for, at padding er inkluderet i bredden */
+    margin-bottom: 10%;
+
+}
+
+.strikkebutikker, .strikkeklubber, .strikkebegivenheder {
+    border: 2px solid #CC5500;
+    border-radius: 3rem;
+    width: 100%;
+    max-width: 25%; /* Sørger for, at hvert element har 25% af bredden */
+    height: auto; /* Bevarer billedets proportioner */
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 2px 15px;
+    text-decoration: none;
+}
+
+.strikkebutikker a, .strikkeklubber a, .strikkebegivenheder a {
+    text-decoration: none;
+}
+
+.guide-billede1 {
+    max-width: 90%;
+    margin: 0 auto; /* Centrerer elementet horisontalt */
+    padding: 5%;
+}
+
+.guide-billede {
+    max-width: 100%;
+}
+
+.strikkeklubber {
+    margin-top: 10%;
+}
+.guide-tekst {
+    color: #CC5500;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 70px;
+    font-family: "lora";
+}
+/*strikkebegivheder*/
+
+#gennemsigtig {
+    color: #F5F5DC; /* for at få samme afstand som på hovedmenuen */
+}
+
+.begivenheder {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.begivenhed {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 13%;
+
+}
+
+.striktilsøs {
+    width: 60%; /* Sørger for, at billedet fylder hele bredden af dets container */
+    height: 60%; /* Sørg for at billedet fylder hele højden af dets container */
+}
+
+.begivenhed-img {
+    justify-content: start;
+    width: 80%; /* Sørger for, at billedet fylder hele bredden af dets container */
+    height: 80%; /* Sørg for at billedet fylder hele højden af dets container */
+    object-fit: cover; /* Sikrer, at billedet dækker containeren uden at ændre proportioner */
+}
+
+.begivenhed-tekst {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    line-height: 2;
+}
+
+.begivenhed-overskrift {
+    color: #CC5500;
+    font-family: Lora, serif;
+    font-size: 100px;
+    padding-bottom: 300px;
+}
+
+.begivenhed-tekst-beskrivelse {
+    margin-top: 50px;
+    text-align: end;
+    color: #CC5500;
+    font-family: Lora, serif;
+    font-weight: 400;
+    font-size: 80px;
+    padding-bottom: 10%;
+}
+
+
+.begivenhed-tekst-underbeskrivelse {
+    display: flex;
+    flex-direction: row;
+    color: #CC5500;
+    font-family: Lora, serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-align: start;
+}
+
+.begivenhed-tekst-underbeskrivelse-cta {
+    margin-left: auto; /* Skubber knappen til højre */
+    display: flex;
+    align-items: center; /* Centrerer knappen vertikalt */
+    margin-right: 5%;
+}
+
+/*footer*/
+footer {
+    background-color: #CC5500;
+    padding: 100px 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nyhedsbrev {
+    color: #F5F5DC;
+    background-color: transparent;
+    margin-top: 2px;
+    margin-left: 10px;
+    border-bottom: 2px solid #F5F5DC;
+    width: 1000px;
+}
+
+#nyhedsbrevtekst {
+    color: #F5F5DC;
+    text-align: left;
+    font-size: 100px;
+    font-family: "Lora", serif;
+    font-weight: 250;
+    width: 1200px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.lilleintro {
+    font-family: "Lora", serif;
+    font-weight: 250;
+    font-size: 40px;
+}
+
+.inputcontainer {
+    padding-right: 10px;
+}
+
+.inputcontainer input[type="email"] {
+    background-color: transparent;
+    font-size: 80px;
+    font-family: "Lora", serif;
+    border: none;
+    color: #F5F5DC;
+}
+
+.inputcontainer input[type="email"]::placeholder {
+    color: #F5F5DC; /* Gør pladsholderen gennemsigtig */
+    border: none; 
+}
+
+.submit-button {
+    color: #F5F5DC;
+    transition: background-color 0.3s;
+    font-size: 400%;
+    font-weight: 200;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px; /* Tilføjer lidt indre afstand til knappen */
+}
+
+.submit-button:hover {
+    color: #654321;
+}
+.social-item a {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* får ikonet og skriften til at stå ved siden af hinanden */
+    text-decoration: none;
+    color: #F5F5DC;
+    margin-bottom: 1%;
+}
+
+.social-item i {
+    padding-right: 10px;
+    padding-left: 100px;
+}
+
+.socialemedier {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #F5F5DC;
+    font-family: "Lora", serif;
+    font-size: 80px;
+}
+
+#sm-overskrift {
+    font-weight: 400;
+    margin-left: -2px;
+}
+
+.social-item {
+    display: flex; /* Gør social-item til flex-container */
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+
+
+.social-item a:hover {
+   color: #654321;
+}
+
